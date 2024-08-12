@@ -1,0 +1,329 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+    margin: 0 auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+/* --------header-------- */
+.header {
+    display: flex;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 32px;
+}
+
+.header-logo {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: #111;
+    text-transform: uppercase;
+}
+
+.header-navigation {
+    display: flex;
+    margin-left: auto;
+}
+
+.header-unnamed-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.text-list-item {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: -0.02em;
+    color: #111;
+}
+
+.icon-header-plate {
+    stroke: orange;
+    fill: transparent;
+}
+
+.icon-header-soc {
+    stroke: #111;
+    fill: transparent;
+}
+
+.header-address {
+    padding-left: 90px;
+}
+
+.header-list-address {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+
+/* ------------------------- */
+/* ---------hero------------- */
+.main-hero {
+
+    background-image: url(./images/hero/chocolate1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 1136px;
+    border-radius: 30px;
+
+
+    @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+        background-image: url(./images/hero/chocolate2x.jpg);
+    }
+
+}
+
+.hero-section {
+    padding-top: 380px;
+    padding-bottom: 40px;
+    margin-bottom: 72px;
+
+}
+
+.hero-title {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.21429;
+    letter-spacing: -0.03em;
+    color: #fff;
+    height: 102px;
+    width: 484px;
+}
+
+.hero-unnamed-list {
+    display: flex;
+    padding-top: 32px;
+    align-items: center;
+}
+
+.btn-hero-buy {
+    border-radius: 100px;
+    width: 144px;
+    height: 45px;
+    background: #fd9222;
+    color: #fff;
+    box-shadow: none;
+    border: none;
+}
+
+.btn-hero-made {
+    margin-left: 14px;
+    padding: 14px 40px;
+    border: 1px solid #fff;
+    border-radius: 100px;
+    color: #fff;
+}
+
+.hero-scroll {
+    margin-left: auto;
+}
+
+.btn-hero-scroll {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line-btn-hero {
+    fill: #fd9222;
+}
+
+.swipe-circle {
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin-left: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --------------------------- */
+/* ---------------Advantages------------ */
+.section-advantages {
+    background-color: #1e1823;
+    padding: 50px 50px;
+    margin-bottom: 100px;
+}
+
+.advantages-unnamed-list {
+    display: flex;
+    gap: 70px;
+}
+
+.advantages-list-item {
+    width: calc((100% - 2 * 88px) / 3);
+    position: relative;
+}
+
+.advantages-list-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    height: 124px;
+    background-color: rgba(255, 255, 255, 0.5);
+    right: -18px;
+    bottom: 50%;
+    transform: translateY(50%);
+}
+
+.advantages-icon {
+    fill: #fd9222;
+    stroke: transparent;
+}
+
+.circle-advantage {
+    border-radius: 100%;
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 64px;
+    margin-bottom: 22px;
+}
+
+.advantages-list-title {
+    font-weight: 600;
+    font-size: 18px;
+    color: #fff;
+    padding-bottom: 18px;
+}
+
+.advantages-list-text {
+    font-weight: 400;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+/* --------------------------------------- */
+/* ---------MADE----------------- */
+
+
+
+
+.made-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    color: #111;
+    text-align: center;
+    width: 410px;
+    margin: 0 auto;
+    padding-bottom: 28px;
+}
+
+.span-made-title {
+    color: #fd9222;
+
+}
+
+.made-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #111;
+    width: 486px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.made-unnamed-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 19px;
+}
+
+.made-list-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 1.28571;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #111;
+    padding-left: 28px;
+    padding-bottom: 28px;
+    padding-top: 36px;
+}
+
+.made-list-item {
+    width: calc((100% - 3 * 19px) / 4);
+    background-color: #fff;
+    border: 1px solid #fd9222;
+    border-radius: 15px;
+}
+
+
+
+
+
+/* ---------------------------------- */
