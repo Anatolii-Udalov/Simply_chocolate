@@ -310,9 +310,9 @@ img {
     letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #111;
-    padding-left: 28px;
-    padding-bottom: 28px;
     padding-top: 36px;
+    padding-bottom: 28px;
+    padding-left: 28px;
 }
 
 .made-list-item {
@@ -320,10 +320,48 @@ img {
     background-color: #fff;
     border: 1px solid #fd9222;
     border-radius: 15px;
+    width: 100%;
+}
+
+.picture-made {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-top: 28px;
+}
+
+.first {
+    background-color: #fd9222;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.third {
+    background-color: #1e1823;
+    color: #fff;
+    border-radius: 15px;
+    border: none;
+}
+
+/* ---------------------------------- */
+/* ---------HOW---------------- */
+.how {
+    margin-top: 100px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.16667;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #111;
+}
+
+.span-how {
+    color: #fd9222;
+
 }
 
 
 
 
-
-/* ---------------------------------- */
+/* ---------------------------- */
