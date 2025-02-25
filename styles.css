@@ -274,6 +274,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
+    z-index: 999;
 
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -317,20 +318,20 @@ img {
     fill: #ffffff;
 }
 
+.first-modal-line {
+    display: flex;
+}
+
 .button-close {
     position: absolute;
     top: 24px;
     right: 24px;
-    display: flex;
     border-radius: 50%;
     width: 24px;
     height: 24px;
-    display: flex;
     margin-left: auto;
     box-shadow: none;
-    align-items: center;
-    justify-content: center;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 0px solid #e7e9fc;
     background-color: #e7e9fc;
     padding: 0;
     cursor: pointer;
@@ -339,7 +340,7 @@ img {
 
 .button-close:hover,
 .button-close:focus {
-    background-color: #404bbf;
+    background-color: #fd9222;
     border: none;
 }
 
@@ -351,6 +352,10 @@ img {
     text-align: center;
     color: #2e2f42;
     margin-bottom: 16px;
+}
+
+.span-modal-text {
+    color: #fd9222;
 }
 
 .area-text {
@@ -371,7 +376,7 @@ img {
 }
 
 .area-text:focus {
-    border-color: #4D5AE5;
+    border-color: #fd9222;
 }
 
 .label-in-put {
@@ -399,16 +404,16 @@ img {
 }
 
 .policy-span {
-    color: #4d5ae5;
+    color: #fd9222;
     text-decoration: underline;
 }
 
 .input-text:focus {
-    border-color: #4D5AE5;
+    border-color: #fd9222;
 }
 
 .input-text:focus+.icon-in-put {
-    fill: #4D5AE5;
+    fill: #fd9222;
 }
 
 .area-label {
@@ -429,7 +434,7 @@ img {
     border-radius: 4px;
     padding: 16px 32px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-    background: #4d5ae5;
+    background: #fd9222;
     margin: 0 auto;
     display: block;
     justify-content: center;
@@ -440,7 +445,7 @@ img {
 
 .button-send:hover,
 .button-send:active {
-    background-color: #31d0aa;
+    background-color: #111;
 }
 
 .icon-in-put {
@@ -495,7 +500,7 @@ img {
 }
 
 .visually-hidden:checked+.label-policy span:first-child {
-    background-color: #404bbf;
+    background-color: #fd9222;
     fill: #f4f4fd;
     border: none;
 }
